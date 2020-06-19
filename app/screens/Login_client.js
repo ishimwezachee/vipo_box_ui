@@ -6,7 +6,7 @@ import Input from "../components/Input/input";
 
 // const width = Dimensions.get('window').width;
 
-const App = ()=>{
+const Login_client_screen = ()=>{
 	const onPress =()=>{
 		alert('clicked')
 	}
@@ -31,11 +31,11 @@ const App = ()=>{
              text='Login into the box'
 			 onPress={onPress}
 			/>
-					<Button
+		<Button
              text='Client'
 			 onPress={onPress}
 			/>
-					<Button
+		<Button
              text='Agent'
 			 onPress={onPress}
 			/>
@@ -81,4 +81,4 @@ const styles=StyleSheet.create({
 	}
 })
 
-export default App;
+export default Login_client_screen;
