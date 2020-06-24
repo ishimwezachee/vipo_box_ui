@@ -3,9 +3,9 @@ import {View,StyleSheet} from 'react-native';
 
 import Image from '../image/image'
 
-const Footer = ()=>{
+const Footer = ({footerStyle})=>{
  return (
-     <View style={styles.container}>
+     <View style={[styles.container,footerStyle]}>
          <Image
          image ={require('../../assets/images/homeButton.png')}
          text='Home'
