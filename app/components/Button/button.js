@@ -4,10 +4,10 @@ import {Text,View,TouchableOpacity,Dimensions,StyleSheet} from 'react-native';
 const width = Dimensions.get('window').width;
 
 
-const Button  = ({text,onPress})=>{
+const Button  = ({text,onPress, buttonStyle})=>{
 	return (
       <TouchableOpacity onPress={onPress}>
-		  <View style={styles.btnContainerStyle}>
+		  <View style={[styles.btnContainerStyle,buttonStyle]}>
 			  <Text style={styles.btnTextStyle}>{text}</Text>
 		  </View>
 	  </TouchableOpacity>

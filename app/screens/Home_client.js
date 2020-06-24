@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         marginTop:150,
+        marginBottom:160,
         marginHorizontal:20,
         justifyContent: 'center',
         alignItems:'center',

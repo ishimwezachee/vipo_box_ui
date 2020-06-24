@@ -19,10 +19,15 @@ const Login_client_screen = ()=>{
 		  />
 		</View>
 		<Input
+	     textStyles={styles.text}
+		  InputStyles={styles.input}
 			text='Phone number or email'
 			value='47484848'
+
 		/>
 		<Input
+	    textStyles={styles.text}
+		InputStyles={styles.input}
 			text='Password'
 			value='47484848'
 		/>
@@ -78,7 +83,20 @@ const styles=StyleSheet.create({
 		alignItems:'center',
 		marginVertical:25,
 		fontWeight:'bold'
+	},
+	input:{
+		backgroundColor:'#fff',
+		marginVertical: 10,
+		marginHorizontal: 20,
+		flexDirection: 'row',
+		borderWidth: 1,
+		borderColor: "#20232a",
+		borderRadius: 6,
+	},
+	text:{
+		marginHorizontal:20
 	}
+	
 })
 
 export default Login_client_screen;
