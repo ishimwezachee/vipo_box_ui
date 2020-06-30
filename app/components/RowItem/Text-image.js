@@ -1,6 +1,5 @@
 import React from 'react';
 import {Text,View,StyleSheet,TouchableOpacity,Image} from 'react-native';
-
 export const  Image_text = ({text,onPress,image})=>{
 
 return (

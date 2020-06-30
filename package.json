@@ -12,7 +12,9 @@
   "dependencies": {
     "react": "16.11.0",
     "react-native": "0.62.2",
-    "react-native-picker-select": "^7.0.0"
+    "react-native-paper": "^3.10.1",
+    "react-native-picker-select": "^7.0.0",
+    "react-native-simple-radio-button": "^2.7.4"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
