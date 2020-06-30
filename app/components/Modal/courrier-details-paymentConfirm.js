@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
 	},
 	closeButton: {
 		backgroundColor: color.green,
-		paddingVertical: 5,
+		paddingVertical: 9,
 		borderRadius: 5
 	},
 	openText: {
