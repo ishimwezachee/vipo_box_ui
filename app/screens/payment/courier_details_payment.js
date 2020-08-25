@@ -7,10 +7,9 @@ import Header from '../../components/Header/header';
 import OptionsInput from '../../components/Input/options_input';
 import Input from '../../components/Input/input';
 import Button from '../../components/Button/button';
-import { RowSeparator } from '../../components/RowItem/Text-image';
-import Footer from '../../components/Footer/footer';
+import { RowSeparator } from '../../components/RowItem/settingImage-Text';
 
-const PaymentDetail = () => {
+const PaymentDetail = ({ navigation }) => {
 	const [ modalVisible, setModalVisible ] = useState(false);
 
 	var radio_props = [ { label: 'Yes', value: 0 }, { label: 'No', value: 1 } ];
@@ -46,6 +45,7 @@ const PaymentDetail = () => {
 					formHorizontal={true}
 					buttonColor={'#000'}
 					onPress={() => console.log('radiobutton')}
+					style={{ marginVertical: 10 }}
 				/>
 			</View>
 			{/* Modal codes  */}
@@ -68,6 +68,7 @@ const PaymentDetail = () => {
 								style={{ ...styles.openButton, backgroundColor: '#0FBA00' }}
 								onPress={() => {
 									setModalVisible(!modalVisible);
+									navigation.popToTop();
 								}}
 							>
 								<Text style={styles.textStyle}>Proceed</Text>
@@ -92,6 +93,12 @@ const PaymentDetail = () => {
 			{/* <Footer /> */}
 		</View>
 	);
+};
+
+PaymentDetail.navigationOptions = (navigationData) => {
+	return {
+		header: () => null
+	};
 };
 
 export default PaymentDetail;

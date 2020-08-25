@@ -1,4 +1,3 @@
-import React from 'react';
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
@@ -19,7 +18,7 @@ const styles = StyleSheet.create({
 	picker: {
 		borderBottomWidth: 1,
 		borderBottomColor: '#000',
-		width: '53%',
+		width: '48%',
 		borderRadius: 16
 	},
 	viewRow: {
@@ -42,13 +41,13 @@ const styles = StyleSheet.create({
 		marginRight: 50
 	},
 	button: {
-		marginHorizontal: '20%',
-		marginVertical: 20,
+		marginHorizontal: '25%',
+		marginBottom: 10,
 		borderRadius: 10
 		// elevation: 2
 	},
 	textOne: {
-		fontSize: 14,
+		fontSize: 13,
 		color: 'black',
 		textAlign: 'center'
 	},
@@ -62,18 +61,15 @@ const styles = StyleSheet.create({
 	},
 	radioButton: {
 		justifyContent: 'center',
-		alignItems: 'center',
-		marginVertical: 10
+		alignItems: 'center'
 	},
 	textTwo: {
 		color: 'gray',
-		fontSize: 14
+		fontSize: 11
 	},
 	viewTwo: {
 		justifyContent: 'center',
-		alignItems: 'center',
-		marginTop: 20,
-		marginBottom: 30
+		alignItems: 'center'
 	},
 	centeredView: {
 		flex: 1,
@@ -86,7 +82,6 @@ const styles = StyleSheet.create({
 		backgroundColor: 'white',
 		borderRadius: 20,
 		padding: 35,
-		// alignItems: 'center',
 		shadowColor: '#000',
 		shadowOffset: {
 			width: 0,
@@ -107,7 +102,6 @@ const styles = StyleSheet.create({
 	},
 	modalText: {
 		marginBottom: 15,
-		// textAlign: 'center',
 		fontSize: 20
 	},
 	feeService: {

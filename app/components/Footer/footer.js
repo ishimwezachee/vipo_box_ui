@@ -1,6 +1,6 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
-
+import { View } from 'react-native';
+import styles from './style';
 import Image from '../image/image';
 
 const Footer = ({ footerStyle }) => {
@@ -14,13 +14,4 @@ const Footer = ({ footerStyle }) => {
 	);
 };
 
-const styles = StyleSheet.create({
-	container: {
-		flexDirection: 'row',
-		justifyContent: 'space-evenly',
-		backgroundColor: '#F2F2F2'
-		//    marginTop:'45%',
-		//    marginHorizontal:20,
-	}
-});
 export default Footer;
