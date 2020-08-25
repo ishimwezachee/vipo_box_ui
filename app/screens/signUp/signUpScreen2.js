@@ -30,6 +30,12 @@ const SignupScreenTwo = ({ navigation }) => {
 			<View style={styles.Inputs}>
 				<InputOption
 					text="Province"
+					placeholder={{ label: 'select province', value: null }}
+				itemSelect={[
+					{ label: 'Kigali city', value: 'kigali' },
+					{ label: 'Northern province', value: 'North' },
+					{ label: 'Sourhern province', value: 'south' }
+				]}
 					InputStyles={styles.InputStyles}
 					ViewStyle={styles.ViewStyle}
 					TextStyle={styles.TextStyle}
@@ -37,12 +43,16 @@ const SignupScreenTwo = ({ navigation }) => {
 
 				<InputOption
 					text="District"
+					placeholder={{ label: 'select District', value: null }}
+				itemSelect={[ { label: 'Gasabo', value: 'gasabo' } ]}
 					InputStyles={styles.InputStyles}
 					ViewStyle={styles.ViewStyle}
 					TextStyle={styles.TextStyle}
 				/>
 				<InputOption
 					text="Sector"
+					placeholder={{ label: 'select sector', value: null }}
+				itemSelect={[ { label: 'Kimihurura', value: 'Kimihurura' } ]}
 					InputStyles={styles.InputStyles}
 					ViewStyle={styles.ViewStyle}
 					TextStyle={styles.TextStyle}
@@ -50,6 +60,8 @@ const SignupScreenTwo = ({ navigation }) => {
 
 				<InputOption
 					text="cell"
+					placeholder={{ label: 'select cell', value: null }}
+				itemSelect={[ { label: 'Rugando', value: 'Kimihurura' } ]}
 					InputStyles={styles.InputStyles}
 					ViewStyle={styles.ViewStyle}
 					TextStyle={styles.TextStyle}
@@ -57,6 +69,8 @@ const SignupScreenTwo = ({ navigation }) => {
 
 				<InputOption
 					text="Village"
+					placeholder={{ label: 'select Village', value: null }}
+				itemSelect={[ { label: 'Gasasa', value: 'Gasasa' } ]}
 					InputStyles={styles.InputStyles}
 					ViewStyle={styles.ViewStyle}
 					TextStyle={styles.TextStyle}
@@ -64,6 +78,8 @@ const SignupScreenTwo = ({ navigation }) => {
 
 				<InputOption
 					text="Street"
+					placeholder={{ label: 'select Street', value: null }}
+				itemSelect={[ { label: 'KG 10', value: 'KG 10' } ]}
 					InputStyles={styles.InputStyles}
 					ViewStyle={styles.ViewStyle}
 					TextStyle={styles.TextStyle}

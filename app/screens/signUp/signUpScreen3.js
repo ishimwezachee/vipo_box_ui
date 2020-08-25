@@ -31,6 +31,8 @@ const SignupScreenThree = ({ navigation }) => {
 			<View style={styles.Inputs}>
 				<InputOption
 					text="House/Building"
+					itemSelect={[ { label: 'select Building', value: null } ]}
+				placeholder={{ label: 'chez Edgar', value: 'Edgar' }}
 					InputStyles={styles.InputStyles}
 					ViewStyle={styles.ViewStyle}
 					TextStyle={styles.TextStyle}

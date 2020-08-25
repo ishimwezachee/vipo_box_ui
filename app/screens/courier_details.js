@@ -14,6 +14,8 @@ const ClientCourierDetail = ({ navigation }) => {
 				<Header text="Courier Details" />
 				<OptionsInput
 					text="Receiver Names"
+					placeholder={{ label: 'select Reciever', value: null }}
+				itemSelect={[ { label: 'Alice', value: 'Alice' } ]}
 					ViewStyle={styles.InputView}
 					TextStyle={styles.receiverName}
 					InputStyles={styles.picker}

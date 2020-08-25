@@ -31,6 +31,8 @@ const SignupScreenOne = ({ navigation }) => {
 			<View style={styles.Inputs}>
 				<InputOption
 					text="AccountType"
+					placeholder={{ label: 'select AccountType', value: null }}
+				itemSelect={[ { label: 'Client', value: 'client' } ]}
 					InputStyles={styles.InputStyles}
 					ViewStyle={styles.ViewStyle}
 					TextStyle={styles.TextStyle}

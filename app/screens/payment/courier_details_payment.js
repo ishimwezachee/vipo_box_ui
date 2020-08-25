@@ -18,6 +18,8 @@ const PaymentDetail = ({ navigation }) => {
 			<Header text="Payment" />
 			<OptionsInput
 				text="Payment by"
+				placeholder={{ label: 'select the payee', value: null }}
+				itemSelect={[ { label: 'Mucyo', value: 'Mucyo' } ]}
 				ViewStyle={styles.InputView}
 				TextStyle={styles.paymentBy}
 				InputStyles={styles.picker}

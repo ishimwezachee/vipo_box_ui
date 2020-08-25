@@ -18,42 +18,60 @@ const Text_Input = ({ navigation }) => {
 			<RowSeparator />
 			<OptionsInput
 				text="province"
+				placeholder={{ label: 'select province', value: null }}
+				itemSelect={[
+					{ label: 'Kigali city', value: 'kigali' },
+					{ label: 'Northern province', value: 'North' },
+					{ label: 'Sourhern province', value: 'south' }
+				]}
 				InputStyles={styles.picker}
 				ViewStyle={styles.optionView}
 				TextStyle={styles.optionText}
 			/>
 			<OptionsInput
 				text="District"
+				placeholder={{ label: 'select District', value: null }}
+				itemSelect={[ { label: 'Gasabo', value: 'gasabo' } ]}
 				ViewStyle={styles.optionView}
 				TextStyle={styles.district}
 				InputStyles={styles.picker}
 			/>
 			<OptionsInput
 				text="Sector"
+				placeholder={{ label: 'select sector', value: null }}
+				itemSelect={[ { label: 'Kimihurura', value: 'Kimihurura' } ]}
 				ViewStyle={styles.optionView}
 				TextStyle={styles.sector}
 				InputStyles={styles.picker}
 			/>
 			<OptionsInput
 				text="Cell"
+				placeholder={{ label: 'select cell', value: null }}
+				itemSelect={[ { label: 'Rugando', value: 'Kimihurura' } ]}
 				ViewStyle={styles.optionView}
 				TextStyle={styles.cell}
 				InputStyles={styles.picker}
 			/>
 			<OptionsInput
 				text="Village"
+				placeholder={{ label: 'select Village', value: null }}
+				itemSelect={[ { label: 'Gasasa', value: 'Gasasa' } ]}
 				ViewStyle={styles.optionView}
 				TextStyle={styles.village}
 				InputStyles={styles.picker}
 			/>
 			<OptionsInput
 				text="Street"
+				placeholder={{ label: 'select Street', value: null }}
+				itemSelect={[ { label: 'KG 10', value: 'KG 10' } ]}
 				ViewStyle={styles.optionView}
 				TextStyle={styles.street}
 				InputStyles={styles.picker}
 			/>
 			<OptionsInput
 				text="Building"
+				itemSelect={[ { label: 'select Building', value: null } ]}
+				placeholder={{ label: 'chez Edgar', value: 'Edgar' }}
 				ViewStyle={styles.optionView}
 				TextStyle={styles.building}
 				InputStyles={styles.picker}
@@ -101,7 +119,7 @@ const styles = StyleSheet.create({
 	},
 	cell: {
 		margin: 10,
-		marginRight: 30
+		marginRight: 37
 	},
 	sector: {
 		margin: 10,
@@ -109,7 +127,7 @@ const styles = StyleSheet.create({
 	},
 	village: {
 		margin: 10,
-		marginRight: 15
+		marginRight: 17
 	},
 	street: {
 		margin: 10,
